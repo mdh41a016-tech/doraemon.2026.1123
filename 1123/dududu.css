@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{background-color: rgba(79, 189, 223, 0.911);
+}
+
+header{
+    background-color: rgb(212, 211, 105);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+h1{
+    color: rgba(90, 182, 219, 0.884);
+    position: fixed;
+    left: 200px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(image/哆啦A夢-Logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;    
+}
+
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+
+header a{
+    color: rgb(17, 180, 145);
+    text-decoration: none;
+}
+
+header a:hover{
+    color: rgb(18, 101, 224);
+    text-decoration: underline;
+}
+
+.news {
+    background-color: rgb(228, 225, 65);
+    color: rgb(83, 172, 224);
+    height: 95vh;
+    background-image: url(image/多拉A夢-幸福.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news h2{
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.news p{
+    color: rgb(230, 170, 212);
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.news a{
+    color: rgb(221, 153, 75);
+    text-decoration: none; 
+    border: 1px solid; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.slogan {
+    background-color: rgb(48, 201, 193);
+    color: rgb(187, 99, 16);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+}
+
+.product img{
+    width: 50%;
+}
+
+.info{
+    width: 50%;
+    background-color: rgb(115, 209, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info h2{
+    font-size: 40px;
+    margin-bottom: 30;
+}
+
+.info p{
+    text-align: 40px;
+    line-height: 2em;
+}
+
+.newslettr{
+    display: flex;
+    background-color: rgb(162, 219, 230);
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+
+.newslettr div{
+    width: 300px;
+    text-align: center;
+}
+
+.newslettr img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.newslettr h2{
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.newslettr p{
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+footer{
+    background-color: rgb(104, 196, 219);
+    color: rgb(230, 227, 80);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+menu{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    header ul{
+        display: none;
+}
+
+header ul {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.news h2{
+    font-size: 40px;
+}
+
+.menu{
+    display: block;
+    background-color: transparent;
+    color: rgb(204, 193, 33);
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.shop{
+    flex-direction: column;
+}
+
+.shop img{
+    width: 100%;
+}
+
+.info{
+    width: 100%;
+}
+
+.info h2{
+    font-size: 30px;
+}
+
+.newslettr{
+    flex-direction: column;
+}
+
+.newslettr div{
+    margin-bottom: 30px;
+}
+
+}
